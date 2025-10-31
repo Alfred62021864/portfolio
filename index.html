@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com" />
     <title>Alfred's Portfolio</title>
     <script>
-        /* Tailwind CDN config: カスタムカラーを1つ追加 */
-        tailwind = { config: { theme: { extend: { colors: { primary: '#0ea5a4' } } } } };
+      /* Tailwind CDN config: カスタムカラーを1つ追加 */
+      tailwind = {
+        config: { theme: { extend: { colors: { primary: '#0ea5a4' } } } }
+      }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <main class="min-h-screen bg-gray-50 py-8 px-4">
-        <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-            <img src="images/icon.png" alt="アイコン画像" class="w-40 h-40 rounded-full mx-auto shadow-md object-cover">
-            <h1 class="text-3xl font-bold text-center text-gray-800 mt-4">Alfred's Portfolio</h1>
-            <p class="text-center text-gray-500 text-lg mt-2">Web Developer</p>
+      <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
+        <img
+          src="images/icon.png"
+          alt="アイコン画像"
+          class="w-40 h-40 rounded-full mx-auto shadow-md object-cover"
+        />
+        <h1 class="text-3xl font-bold text-center text-gray-800 mt-4">Alfred's Portfolio</h1>
+        <p class="text-center text-gray-500 text-lg mt-2">Web Developer</p>
 
-            <section class="mt-6">
-                <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">スキル</h2>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <li class="bg-gray-100 rounded-md p-3 text-gray-700">HTML</li>
-                    <li class="bg-gray-100 rounded-md p-3 text-gray-700">CSS</li>
-                </ul>
-            </section>
+        <section class="mt-6">
+          <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">スキル</h2>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li class="bg-gray-100 rounded-md p-3 text-gray-700">HTML</li>
+            <li class="bg-gray-100 rounded-md p-3 text-gray-700">CSS</li>
+          </ul>
+        </section>
 
-            <section class="mt-6">
-                <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">保有資格</h2>
-                <ul class="space-y-3">
-                    <li class="bg-gray-50 border border-gray-100 rounded-md p-3">応用情報技術者試験(AP)</li>
-                    <li class="bg-gray-50 border border-gray-100 rounded-md p-3">AWS Solutions Architect – Associate</li>
-                    <li class="bg-gray-50 border border-gray-100 rounded-md p-3">JSTQB Foundation Level</li>
-                </ul>
-            </section>
+        <section class="mt-6">
+          <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">保有資格</h2>
+          <ul class="space-y-3">
+            <li class="bg-gray-50 border border-gray-100 rounded-md p-3">応用情報技術者試験(AP)</li>
+            <li class="bg-gray-50 border border-gray-100 rounded-md p-3">
+              AWS Solutions Architect – Associate
+            </li>
+            <li class="bg-gray-50 border border-gray-100 rounded-md p-3">JSTQB Foundation Level</li>
+          </ul>
+        </section>
 
-            <section class="mt-6">
-                <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">趣味</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>音楽観賞</li>
-                    <li>おすすめのアーティスト: THE ALFEE</li>
-                </ul>
-                <div class="relative pb-[56.25%] h-0 overflow-hidden mt-4 rounded-md">
-                    <iframe 
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/x1ZWm2fH2uk?si=lonDtZFYhxwsLEoi" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </section>
+        <section class="mt-6">
+          <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">趣味</h2>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>音楽観賞</li>
+            <li>おすすめのアーティスト: THE ALFEE</li>
+          </ul>
+          <div class="relative pb-[56.25%] h-0 overflow-hidden mt-4 rounded-md">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/x1ZWm2fH2uk?si=lonDtZFYhxwsLEoi"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
 
-            <section class="mt-6">
-                <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">作品集</h2>
-                <p class="text-gray-600">ここにプロジェクトのサムネイルやリンクを追加できます。</p>
-            </section>
+        <section class="mt-6">
+          <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">作品集</h2>
+          <p class="text-gray-600">ここにプロジェクトのサムネイルやリンクを追加できます。</p>
+        </section>
 
-            <section class="mt-6">
-                <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">技術ブログ</h2>
-                <p class="text-gray-600">技術記事や学びのログを載せる予定です。</p>
-            </section>
+        <section class="mt-6">
+          <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">技術ブログ</h2>
+          <p class="text-gray-600">技術記事や学びのログを載せる予定です。</p>
+        </section>
 
-            <section class="mt-6">
-                <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">今後伸ばしたいスキル</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Webデザイン</li>
-                    <li>事業設計</li>
-                    <li>語学</li>
-                    <li>作曲</li>
-                </ul>
-            </section>
-        </div>
+        <section class="mt-6">
+          <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">
+            今後伸ばしたいスキル
+          </h2>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Webデザイン</li>
+            <li>事業設計</li>
+            <li>語学</li>
+            <li>作曲</li>
+          </ul>
+        </section>
+      </div>
     </main>
-</body>
+  </body>
 </html>
